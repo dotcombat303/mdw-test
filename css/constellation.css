@@ -1,0 +1,104 @@
+/* ============================================================
+   constellation.css
+   Desktop: items float at absolute positions inside a relative
+   container; JS drives a per-item orbital drift via transform.
+   Mobile: a completely conventional list — see the media query
+   at the bottom, and note .constellation is display:none there,
+   .constellation-fallback is the one that shows.
+   ============================================================ */
+
+.constellation-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  /* keeps the constellation clear of the collapsed About panel /
+     sticky note at rest. If either is expanded it can cover items —
+     that's fine, floating layers are expected to overlap then. */
+  padding-top: var(--constellation-clearance, 15rem);
+}
+
+.constellation {
+  position: relative;
+  width: 100%;
+  height: calc(80vh - var(--constellation-clearance, 9rem));
+}
+
+.constellation-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+.constellation-lines line {
+  stroke: var(--color-line);
+  stroke-width: 0.1;
+}
+
+.constellation-item {
+  position: absolute;
+  left: var(--anchor-x, 50%);
+  top: var(--anchor-y, 50%);
+  transform: translate(-50%, -50%);
+  transition: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3xs);
+  max-width: 20rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.constellation-item__thumb {
+  width: 3.5rem;
+  height: 3.5rem;
+  overflow: hidden;
+  background: var(--color-line); /* visible even with no image yet */
+}
+.constellation-item__thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.constellation-item__title {
+  font-size: var(--font-size-1);
+  line-height: 1.1;
+  font-style: normal;
+  text-transform: none;
+}
+.constellation-item__author {
+  font-size: var(--font-size-0);
+  line-height: 1.1;
+}
+
+/* mobile fallback: plain list, no positioning, no JS */
+.constellation-fallback {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.constellation-fallback li { border-top: 1px solid var(--color-line); }
+.constellation-fallback a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  padding: var(--space-s) 0;
+  text-decoration: none;
+}
+.constellation-fallback .constellation-item__thumb { width: 3rem; height: 3rem; flex-shrink: 0; }
+.constellation-fallback .constellation-item__text { display: flex; flex-direction: column; gap: var(--space-3xs); text-align: left; }
+
+@media (max-width: 900px) {
+  .constellation-wrap { min-height: 0; }
+  .constellation { display: none; }
+  .constellation-fallback { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* JS also checks this and skips the animation loop entirely;
+     this is just a belt-and-suspenders CSS-level guarantee */
+  .constellation-item { transition: none !important; }
+}

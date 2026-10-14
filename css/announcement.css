@@ -1,0 +1,64 @@
+/* ============================================================
+   announcement.css
+   Two independent implementations of the same announcement,
+   toggled via params.showTicker / params.showSticky in hugo.toml
+   so both can run side by side during testing. Delete whichever
+   loses, plus its partial + these rules, once decided.
+   ============================================================ */
+
+/* ---------- ticker (bottom, full width) ---------- */
+.announcement-ticker {
+  font-family: "redaction-50", sans-serif;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 500;
+  border-top: 1px solid var(--color-ink);
+  
+  color: var(--color-ink);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: var(--space-2xs) 0;
+  text-transform: uppercase;
+}
+.announcement-ticker__track {
+  display: inline-flex;
+  width: 100%;
+  gap: var(--space-xl);
+  animation: ticker-scroll 22s linear infinite;
+  padding-left: var(--space-2xl);
+}
+.announcement-ticker:hover .announcement-ticker__track { animation-play-state: paused; }
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+/* reserves room so the fixed ticker never covers page content */
+body.has-ticker { padding-bottom: 2.75rem; }
+
+/* ---------- sticky note (floating, top right on desktop) ---------- */
+.announcement-sticky {
+  position: fixed;
+  top: var(--space-m);
+  right: var(--space-m);
+  z-index: 500;
+  width: min(320px, 90vw);
+  padding: var(--space-s);
+  border: 1px solid var(--color-ink);
+  background: var(--color-bg);
+  display: none;
+}
+.announcement-sticky__close {
+  position: absolute;
+  top: var(--space-2xs);
+  right: var(--space-2xs);
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: var(--font-size--1);
+  line-height: 1;
+}
+.announcement-sticky[hidden] { display: none; }
+
+@media (max-width: 900px) {
+  .announcement-sticky { position: static; width: auto; margin: 0 var(--space-m) var(--space-m); }
+}

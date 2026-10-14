@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Artists &amp; Contributors on Mapping Data Work</title>
+		<link>https://dotcombat303.github.io/mdw-test/contributors/</link>
+		<description>Recent content in Artists &amp; Contributors on Mapping Data Work</description>
+		<generator>Hugo</generator>
+		<language>en-in</language>
+		
+		
+		
+		
+			<atom:link href="https://dotcombat303.github.io/mdw-test/contributors/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Anisha Baid</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/artist-one/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/artist-one/</guid>
+				<description>&lt;p&gt;Anisha Baid is an artist and writer based in Bangalore. Through performances, guided meditations and static objects, her work attempts to poke at the flat-scapes of the computer screen to decode computer labour through the interface - a technological tool that has converted most spaces of work into image space. Her work has been shown in international solo exhibitions including at Pittsburgh Cultural Trust, as well as at Technical Collections, Dresden (2020), GIBCA, Goteborg, Sweden and Landskrona Foto Museum, Sweden. She has been supported by various grants and awards including from the Frank Ratchye Studio for Creative Inquiry, Inlaks Foundation, the India Foundation for the Arts, the Goethe Institut, as well as the Arts and Humanities Research Council, and Bluecoat in the UK.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Debarun Sarkar, Cheshta Arora, Gabriele de Seta, and Luke Drozd</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/artist-two/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/artist-two/</guid>
+				<description>&lt;p&gt;Debarun Sarkar is Postdoctoral Research Fellow in Digital Culture with the ALGOFOLK project at the Centre for Digital Narrative, Department of Literature, Linguistics and Aesthetic Studies at the University of Bergen.&lt;/p&gt;&#xA;&lt;p&gt;Cheshta Arora is a Senior Researcher with the Technology &amp;amp; Society group at the Western Norway Research Institute, Sogndal.&lt;/p&gt;&#xA;&lt;p&gt;Gabriele De Seta is a Researcher and the Project Leader of the ALGOFOLK project at the Centre for Digital Narrative, Department of Literature, Linguistics and Aesthetic Studies at the University of Bergen.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yatharth</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/artist-three/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/artist-three/</guid>
+				<description>&lt;p&gt;Yatharth is a researcher, designer and artist based in Bengaluru, India. His research practice explores caste on digital platforms and design injustice in digital technologies. Yatharth has worked with various nonprofits, research institutes, design schools and studios in the roles of media educator, qualitative researcher, curator, creative coder and designer.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Essayist One Name</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/essayist-one/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/essayist-one/</guid>
+				<description>&lt;p&gt;Short bio for Essayist One Name. [Replace with real bio text.]&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Essayist Two Name</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/essayist-two/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/essayist-two/</guid>
+				<description>&lt;p&gt;Short bio for Essayist Two Name. [Replace with real bio text.]&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Essayist Three Name</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/essayist-three/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/essayist-three/</guid>
+				<description>&lt;p&gt;Short bio for Essayist Three Name. [Replace with real bio text.]&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Workshop Facilitators and Report Authors</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/artist-four/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/artist-four/</guid>
+				<description>&lt;p&gt;[Replace with real bio text.]&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
