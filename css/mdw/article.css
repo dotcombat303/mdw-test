@@ -67,7 +67,7 @@
 .text--note .text__body { font-size: calc(1.05*var(--font-size--1)); font-weight:700; line-height: 1.7; text-wrap:balance; 
   /* text-align:justify;  */
   /* hyphens:auto;  */}
-.text--note { padding: var(--space-xs); background: var(--color-accent); color: var(--color-text); }
+.text--note { padding: var(--space-xs); background: var(--color-accent-2); color: var(--color-text); }
 .bio + .bio { margin-top: var(--space-s); }
 .bio__text strong { font-weight: 700; }   /* author names */
 .bio__text p { margin: 0; line-height: 1.6; text-wrap:pretty; text-align:justify; hyphens:auto;}
