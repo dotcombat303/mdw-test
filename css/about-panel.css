@@ -1,0 +1,166 @@
+/* ============================================================
+   about-panel.css
+   Floating window, top-left, ~60-70% of viewport width on desktop.
+   Built on a native <details> element: closed = truncated teaser,
+   open = grows in height to show the full text. No JS required for
+   the toggle itself; about-panel.js only smooths the height change.
+   ============================================================ */
+
+.about-panel {
+  position: fixed;
+  top: var(--space-xs);
+  left: var(--space-xs);
+  z-index: 600;
+  width: 75%;
+  max-width: 75%;
+  max-height: calc(90vh - var(--space-l));
+  overflow-y: auto;
+  border: 1px solid var(--color-ink);
+  background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  padding: 0;
+  font-size: var(--font-size-2);
+  line-height: 1.1;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+
+.about-full p {
+  margin-bottom: 1rem;
+} 
+
+
+.about-panel::-webkit-scrollbar { width: 0.65rem; }
+.about-panel::-webkit-scrollbar-track { background: transparent; border-left: 1px solid var(--color-ink) ;}
+.about-panel::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: var(--color-ink);
+  background-clip: padding-box;
+}
+
+/* Hide scrollbar completely while panel is collapsed */
+.about-panel:not([open]) {
+  overflow: hidden;
+}
+
+.about-panel:not([open])::-webkit-scrollbar {
+  display: none;
+}
+
+/* Restore scrolling when expanded */
+.about-panel[open] {
+  overflow-y: auto;
+}
+
+.about-panel[open]::-webkit-scrollbar {
+  display: block;
+}
+
+
+.about-panel summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.about-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+
+/* Collapsed: ellipsis continues the teaser inline */
+.about-panel:not([open]) summary::after {
+  content: " …";
+  font-weight: 700;
+}
+
+/* Expanded: remove inline ellipsis */
+.about-panel[open] summary::after {
+  content: none;
+}
+
+/* Expanded: reserve space for the close signifier */
+.about-panel[open] summary {
+  padding-right: 6rem;
+}
+
+/* Expanded: close signifier */
+.about-panel[open] summary::before {
+  content: "[close]";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 3;
+
+  display: inline-block;
+  padding: 5px 9px;
+
+  border: 1px solid var(--color-line);
+  border-radius: 3px;
+
+  background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #DAD8FF 100%
+  );
+
+  color: var(--color-ink);
+  font-family: var(--font-family-ui);
+  font-size: var(--font-size--2);
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 90%),
+    0 1px 3px rgb(25 0 255 / 12%);
+}
+
+.about-panel[open] summary:hover::before {
+  background: linear-gradient(
+    180deg,
+    #4935FF 0%,
+    #1900FF 100%
+  );
+  color: #FFFFFF;
+}
+
+/* Expanded: pressed state */
+.about-panel[open] summary:active::before {
+  box-shadow: inset 0 2px 4px rgb(16 0 100 / 20%);
+}
+
+/* Expanded panel content */
+.about-panel .about-full {
+  margin-top: var(--space-m);
+  position: relative;
+}
+
+/* Remove the old separate close button */
+.about-panel__close {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .about-panel summary {
+    padding-right: 0;
+  }
+
+  .about-panel[open] summary {
+    padding-right: 6rem;
+  }
+}
+
+
+
+
+@media (max-width: 900px) {
+  .about-panel { position: static; width: auto; max-width: none; margin: var(--space-m); }
+}

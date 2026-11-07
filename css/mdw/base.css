@@ -1,0 +1,105 @@
+/* Shared site styles */
+
+:root {
+  --color-bg:       #ffffff;
+  --color-text:     #111111;
+  --color-muted:    #6b6b6b;
+  --color-line:     #d9d9d9;
+  --color-surface:  #f2f2f2;
+  --color-link:     #0000ee;
+  --color-accent:   #39ff14;
+  --color-accent-2: #f5ff00;
+
+  /* Fonts are loaded from the Adobe Fonts kit in head.html. */
+  --font-display: "redaction-20", "Times New Roman", Georgia, serif;
+  --font-text: "area-normal", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  --font-size--1: clamp(0.8333rem, 0.7758rem + 0.2876vw, 1rem);
+  --font-size-0:  clamp(1rem,      0.9128rem + 0.4360vw, 1.25rem);
+  --font-size-1:  clamp(1.2rem,    1.0745rem + 0.6277vw, 1.5625rem);
+  --font-size-2:  clamp(1.44rem,   1.2637rem + 0.8815vw, 1.9531rem);
+  --font-size-3:  clamp(1.728rem,  1.4844rem + 1.2178vw, 2.4414rem);
+  --font-size-display: clamp(2.5rem, 1rem + 5vw, 5rem);
+
+  --space-xs:  clamp(0.75rem, 0.7011rem + 0.2447vw, 0.9375rem);
+  --space-s:   clamp(1rem,    0.9348rem + 0.3263vw, 1.25rem);
+  --space-m:   clamp(1.5rem,  1.4022rem + 0.4894vw, 1.875rem);
+  --space-l:   clamp(2rem,    1.8696rem + 0.6526vw, 2.5rem);
+  --space-xl:  clamp(3rem,    2.8043rem + 0.9789vw, 3.75rem);
+
+  --pad: clamp(1.25rem, 2vw, 1.75rem);
+  --page-max: none;
+  --line: 1px solid var(--color-line);
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body, h1, h2, h3, h4, p, figure, ul { margin: 0; }
+img, svg, iframe { display: block; max-width: 100%; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+
+body {
+  position: relative;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-text);
+  font-size: var(--font-size--1);
+  line-height: 1.4;
+  text-wrap: pretty;
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.1; }
+a { color: var(--color-link);}
+::selection { background: var(--color-accent); color: var(--color-text); }
+:focus-visible { outline: 2px solid var(--color-link); outline-offset: 2px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+.skip { position: absolute; left: -999px; top: 0; z-index: 100; background: var(--color-accent); color: var(--color-text); padding: .5rem 1rem; }
+.skip:focus { left: 0; }
+
+main { max-width: var(--page-max); margin-inline: auto; }
+
+/* Header */
+.site-head { background: transparent;}
+.site-nav {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: .5rem var(--pad);
+}
+.site-nav a { color: inherit; text-decoration: none; }
+.site-nav__brand { font-family: var(--font-text); font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; }
+.site-nav__brand:hover { text-decoration: underline; }
+.site-nav__list { display: flex; gap: .4rem; padding: 0; list-style: none; }
+.site-nav__list a {
+  display: block; padding: .2rem .9rem .3rem .9rem;
+  background: var(--color-bg); color: var(--color-text); text-decoration: none;
+  border: 1px solid var(--color-text); border-radius: 999px;
+  font-size: var(--font-size--1); line-height: 1.3;
+}
+.site-nav__list a:hover { background: var(--color-accent); color: var(--color-text); }
+.site-nav__list a[aria-current] { background: var(--color-accent); }
+
+/* Project rows */
+.rows { padding: 0; list-style: none; }
+main > .rows { margin: var(--space-s) var(--pad) var(--space-xl); }
+.row { border-top: var(--line); }
+.row:first-of-type { border-top: none; }
+.rows > .row:last-child { border-bottom: var(--line); }
+.row__link {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center; gap: var(--space-s);
+  padding: var(--space-s) 0;
+  color: inherit; text-decoration: none;
+}
+.row__title { display: block; font-family: var(--font-display); font-size: var(--font-size-2); line-height: 1.1; }
+.row__by { display: block; margin-top: .3rem; font-size: var(--font-size--1); text-transform: uppercase; letter-spacing: .04em; }
+.row__link:hover .row__title { text-decoration: underline; text-decoration-color: var(--color-accent);}
+.row__link:hover .row__arrow { color: var(--color-accent); }
+
+@media (max-width: 47.5rem) {
+  .row__title { font-size: var(--font-size-1); }
+}

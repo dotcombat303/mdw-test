@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Mapping Data Work</title>
+		<link>https://dotcombat303.github.io/mdw-test/</link>
+		<description>Recent content on Mapping Data Work</description>
+		<generator>Hugo</generator>
+		<language>en-in</language>
+		
+		
+		
+		
+			<atom:link href="https://dotcombat303.github.io/mdw-test/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Anisha Baid</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/anisha-baid/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/anisha-baid/</guid>
+				<description>&lt;p&gt;Anisha Baid is an artist and writer based in Bangalore. Through performances, guided meditations and static objects, her work attempts to poke at the flat-scapes of the computer screen to decode computer labour through the interface - a technological tool that has converted most spaces of work into image space. Her work has been shown in international solo exhibitions including at Pittsburgh Cultural Trust, as well as at Technical Collections, Dresden (2020), GIBCA, Goteborg, Sweden and Landskrona Foto Museum, Sweden. She has been supported by various grants and awards including from the Frank Ratchye Studio for Creative Inquiry, Inlaks Foundation, the India Foundation for the Arts, the Goethe Institut, as well as the Arts and Humanities Research Council, and Bluecoat in the UK.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Black Box</title>
+				<link>https://dotcombat303.github.io/mdw-test/black-box/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/black-box/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cheshta Arora</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/cheshta-arora/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/cheshta-arora/</guid>
+				<description>&lt;p&gt;Cheshta Arora is a Senior Researcher with the Technology &amp;amp; Society group at the Western Norway Research Institute, Sogndal.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Data is Being Annotated</title>
+				<link>https://dotcombat303.github.io/mdw-test/the-data-is-being-trained/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/the-data-is-being-trained/</guid>
+				<description>&lt;h2 id=&#34;data-is-being-annotated&#34;&gt;Data is being annotated&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cheshta Arora:&lt;/strong&gt; I read the proposal before this call, and I realised that the &lt;a href=&#34;https://uli.tattle.co.in/&#34;&gt;Uli&lt;/a&gt; project was the main thing that we sold during the application, but then we completely turned it upside down, and we made industry data workers the centre of the zine and the Uli part just became one box in the corner of the page.&lt;/p&gt;&#xA;&lt;p&gt;I think initially, though, when we wrote the proposal, that was the only side of data work that we knew, or at least I knew, where I had worked with the annotators, and we had experimented with this new approach to machine learning that was going on at that time. This was five years ago when generative AI was not that big. The idea [we borrowed it from &lt;a href=&#34;https://aclanthology.org/W16-5618.pdf&#34;&gt;Waseem (2016)&lt;/a&gt;] was that while a lot of hate speech datasets and the detection models were being built, they were mostly being built by engineers or data scientists who had no understanding of what hate speech is or how hate speech or the experience of it changes from one individual to the other. Something could be hate speech for you, but it&amp;rsquo;s not hate speech for me. Also, the [women’s movement in] India has a long history of engaging with violence against women and hate speech, and online gender-based violence was an extension of that discourse into the technology sphere. So with Uli, the idea was not to use data scientists or engineers to annotate data sets of hate speech, but to use individuals or members of the community who are often at the receiving end of violence and also to understand if one could capture an intersectional understanding of gender-based violence. For Uli, we invited journalists, activists, and young users who were on Instagram creating queer content. The point was to invite them because they will have a more intuitive understanding of what can become hate speech in different contexts. So Uli was an experiment to see whether, when annotations are done with some context in mind and not objectively, does that produce very different results with machine learning? We did have some guidelines in that project, but we did not really force it on the annotators. We gave them freedom to annotate whatever they think could be hate speech in any context that they can imagine.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Debarun Sarkar</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/debarun-sarkar/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/debarun-sarkar/</guid>
+				<description>&lt;p&gt;Debarun Sarkar is Postdoctoral Research Fellow in Digital Culture with the ALGOFOLK project at the Centre for Digital Narrative, Department of Literature, Linguistics and Aesthetic Studies at the University of Bergen.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Instant Infrastructures</title>
+				<link>https://dotcombat303.github.io/mdw-test/instant-infrastructures/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/instant-infrastructures/</guid>
+				<description>&lt;h2 id=&#34;ramblings-what-is-data-work&#34;&gt;Ramblings: What is data work?&lt;/h2&gt;&#xA;&lt;p&gt;When I started working on this project, I had been fresh out of research on platform work in India, where my work looked at how gamification, standardisation and surveillance impact domestic workers and how it relates to larger social hierarchies. I was and am largely unfamiliar with the framing of data work.&lt;/p&gt;&#xA;&lt;p&gt;While &amp;ldquo;data work&amp;rdquo; colloquially tends to refer to labour associated with data annotation, moderation, labelling and other forms of labour which involve working with “data” to feed AI systems for training, validations and other such usage; In my work I had come across a different kind of data work where the worker body itself becomes a data point to be calculated, manipulated and controlled. The entire premise of platform-based gig work is not possible without the datafication of labour. The gig work platforms and the state and private infrastructure which make them possible act as a system of datafication which enumerates a worker and their lives into IDs, performance metrics, gate access permits, mapping beacons, advertising displays and inventory prediction algorithms through networks of gGamification, surveillance, pPayments, insurance, telecom and ID infrastructures. This is not to say that the data work is only being done by the worker; every stakeholder, including the customer, is involved in this, but this is to highlight that work in gig work is data work.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Gabriele de Seta</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/gabriele-de-seta/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/gabriele-de-seta/</guid>
+				<description>&lt;p&gt;Gabriele de Seta is a Researcher and the Project Leader of the ALGOFOLK project at the Centre for Digital Narrative, Department of Literature, Linguistics and Aesthetic Studies at the University of Bergen.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Workshop in Bengaluru, March 2025</title>
+				<link>https://dotcombat303.github.io/mdw-test/bengaluru-workshop/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/bengaluru-workshop/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Luke Drozd</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/luke-drozd/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/luke-drozd/</guid>
+				<description>&lt;p&gt;Luke Drozd is a UK born artist and maker currently based in Bergen, Norway.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yatharth</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/yatharth/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/yatharth/</guid>
+				<description>&lt;p&gt;Yatharth is a researcher, designer and artist based in Bengaluru, India. His research practice explores caste on digital platforms and design injustice in digital technologies. Yatharth has worked with various nonprofits, research institutes, design schools and studios in the roles of media educator, qualitative researcher, curator, creative coder and designer.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Jef Ausloos</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/jef-ausloos/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/jef-ausloos/</guid>
+				<description>&lt;p&gt;[Replace with real bio text. People like curators and organisers have a page here but are not attached to any project, so they appear on the People page only.]&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Divij Joshi</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/divij-joshi/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/divij-joshi/</guid>
+				<description>&lt;p&gt;[Replace with real bio text. People like curators and organisers have a page here but are not attached to any project, so they appear on the People page only.]&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Mila T Samdub</title>
+				<link>https://dotcombat303.github.io/mdw-test/contributors/mila-t-samdub/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/contributors/mila-t-samdub/</guid>
+				<description>&lt;p&gt;[Replace with real bio text. People like curators and organisers have a page here but are not attached to any project, so they appear on the People page only.]&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About the Project</title>
+				<link>https://dotcombat303.github.io/mdw-test/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://dotcombat303.github.io/mdw-test/about/</guid>
+				<description>&lt;p&gt;The digital economy is reconfiguring relationships between technology and labour. Workers involved in the production and maintenance of the digital economy are subjected to intensifying exploitative social dynamics of caste, class and gender and experience new forms of precarity and inequality. Mapping Data Work supported the development of aesthetic modes that engage and respond to these conditions. The grantee projects bridge artistic research and academic inquiry towards new formations of evidence, critique and action.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

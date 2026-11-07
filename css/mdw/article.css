@@ -1,0 +1,130 @@
+/* Project navigation */
+.pager { display: flex; justify-content: space-between; gap: 1rem; padding: var(--space-xs) var(--pad) 0; }
+.pager a { color: inherit; text-decoration: none; }
+.pager a:hover { text-decoration: underline; }
+.pager__steps { display: flex; gap: var(--space-m); }
+
+/* Project */
+.project { padding: 0 var(--pad) var(--space-xl); }
+.project__head { padding: var(--space-m) 0; }
+.project__title { font-size: var(--font-size-display); }
+.project__by { margin-top: .4rem; text-transform: uppercase; letter-spacing: .04em; }
+.project__by a { color: inherit; }
+
+.project a:hover { background: var(--color-accent);}
+
+/* Embedded media */
+.embed { border: 1px solid var(--color-text); }
+.embed__bar {
+  display: flex; justify-content: space-between; gap: 1rem;
+  padding: .3rem .75rem; background: var(--color-surface); border-bottom: 1px solid var(--color-text);
+  font-size: .8125rem;
+}
+.embed__open { color: var(--color-link); }
+.embed__frame { width: 100%; aspect-ratio: 16 / 9; border: 0; background: var(--color-surface); }
+.embed--pdf .embed__frame { aspect-ratio: auto; height: min(85vh, 60rem); }
+.embed--unity .embed__frame { aspect-ratio: 16 / 9; }
+
+
+.embed__toggle {
+  padding: 0 .5rem; margin-left: -.5rem;   /* aligns text with the old label position */
+  background: none; border: 0; font: inherit; text-align: left; cursor: pointer;
+}
+.embed__toggle:hover { background: var(--color-accent-2); }
+.embed__toggle[aria-pressed="true"] { background: var(--color-accent); }
+.embed__toggle-on { display: none; }
+.embed__toggle[aria-pressed="true"] .embed__toggle-on { display: inline; }
+.embed__toggle[aria-pressed="true"] .embed__toggle-off { display: none; }
+
+/* frame ignores the pointer (so the page scrolls) until switched on */
+.embed.has-gate:not(.is-active) .embed__frame { pointer-events: none; }
+
+/* Project text */
+.project__texts {
+  display: grid; gap: var(--space-m) var(--space-l);
+  margin-top: var(--space-l);
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "note" "artist" "bio";
+}
+.text--note   { grid-area: note; }
+.text--artist { grid-area: artist; }
+.text--bio    { grid-area: bio; }
+.text__body p + p { margin-top: 0; text-indent: var(--space-l);}
+.text__body p:first-child { text-indent: 0;}
+.text__body p:has(> strong:first-child) {margin-top: 1em; text-indent: 0;
+}
+
+/* Artist text */
+.text--artist .text__body { max-width: 48rem; margin: 0 auto; font-family: var(--font-text); font-size: var(--font-size-0); line-height: 1.6; text-align: justify; text-wrap: pretty; hyphens: auto; }
+.text--artist .text__body h2, .text--artist .text__body h3 { margin: 0.5em 0 .5em; font-size: var(--font-size-3); text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--color-accent); }
+.text--artist .text__body img { margin: 1.2em 0; }
+.text--artist figure { margin: 1.2em 0; }
+.text--artist figcaption { font-family: var(--font-text); font-size: .8125rem; color: var(--color-muted); }
+.text--artist blockquote { margin: 1em 0; padding-left: 1em; border-left: 2px solid var(--color-text); }
+
+/* Notes and bios */
+.text--bio .text__body { font-size: var(--font-size--1);}
+.text--note .text__body { font-size: calc(1.05*var(--font-size--1)); font-weight:700; line-height: 1.7; text-wrap:balance; 
+  /* text-align:justify;  */
+  /* hyphens:auto;  */}
+.text--note { padding: var(--space-xs); background: var(--color-accent); color: var(--color-text); }
+.bio + .bio { margin-top: var(--space-s); }
+.bio__text strong { font-weight: 700; }   /* author names */
+.bio__text p { margin: 0; line-height: 1.6; text-wrap:pretty; text-align:justify; hyphens:auto;}
+.bio img { max-width: 8rem; margin-bottom: .5rem; }
+
+@media (min-width: 60rem) {
+  .project__texts {
+    grid-template-columns: minmax(16rem, 1fr) minmax(0, 2fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "note artist" "bio artist";
+    align-items: start;
+  }
+}
+
+/* Footnotes */
+.footnotes { margin-top: var(--space-l); padding-top: var(--space-s); border-top: var(--line); font-family: var(--font-text); font-size: .875rem; color: var(--color-muted); }
+
+/* Pages and listings */
+.page { max-width: 48rem; padding: var(--space-m) var(--pad) var(--space-l); margin-left: 0; }
+.page__title { font-size: var(--font-size-3); font-family: var(--font-display); text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--color-accent); line-height: 1.2; }
+.page__lead { margin-top: var(--space-m); text-transform: uppercase; font-family: var(--font-text); letter-spacing: .05em; }
+.page__body { margin-top: var(--space-m); font-family: var(--font-text); font-size: var(--font-size-0); line-height: 1.7; text-align: justify; text-wrap: pretty; hyphens: auto; }
+.page__body p + p { margin-top: 1em; }
+.listing { padding: 0 var(--pad) var(--space-xl); }
+.listing__label { margin-bottom: var(--space-xs); font-family: var(--font-text); font-size: .8125rem; text-transform: uppercase; letter-spacing: .06em; color: var(--color-muted); }
+
+
+/* About text */
+.page--about .page__body p { margin-top: 0em; text-indent: var(--space-l);}
+.page--about .page__body p:first-child {text-indent: 0; margin-top: 1.5em;}
+.page--about .page__body ul { list-style-type: none; margin-left: 0em; margin-top: 0.25em; margin-bottom: 0.25em;}
+.page--about .page__body a { color: var(--color-link)}
+.page--about .page__body a:hover { background-color: var(--color-accent);}
+.page--about .page__body span{display: block; margin: 0;padding-top: var(--space-l); font-size: var(--font-size--1); font-family: var(--font-text); color: var(--color-muted); letter-spacing: .06em;}
+
+
+
+
+
+/* illustration pinned to the background, right side, behind everything */
+.page__art {
+  position: fixed;
+  right: var(--pad);
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(42vw, 44rem);        /* bigger: raise/lower to taste */
+  z-index: -1;
+  pointer-events: none;
+}
+.page__art img { width: 100%; height: auto; }
+
+/* small screens: centred behind the text, softened so the text stays readable */
+@media (max-width: 60rem) {
+  .page__art {
+    right: auto; left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90vw, 32rem);
+    opacity: .25;
+  }
+}
