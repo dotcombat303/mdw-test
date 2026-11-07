@@ -14,7 +14,8 @@
 .project a:hover { background: var(--color-accent);}
 
 /* Embedded media */
-.embed { border: 1px solid var(--color-text); }
+.embed { border: 1px solid var(--color-text); text-transform: uppercase;
+  text-decoration: underline;}
 .embed__bar {
   display: flex; justify-content: space-between; gap: 1rem;
   padding: .3rem .75rem; background: var(--color-surface); border-bottom: 1px solid var(--color-text);
@@ -29,6 +30,9 @@
 .embed__toggle {
   padding: 0 .5rem; margin-left: -.5rem;   /* aligns text with the old label position */
   background: none; border: 0; font: inherit; text-align: left; cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
 }
 .embed__toggle:hover { background: var(--color-accent-2); }
 .embed__toggle[aria-pressed="true"] { background: var(--color-accent); }
